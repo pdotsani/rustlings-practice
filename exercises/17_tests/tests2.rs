@@ -12,12 +12,14 @@ fn main() {
 mod tests {
     use super::*;
 
+    use crate::power_of_2;
+
     #[test]
     fn you_can_assert_eq() {
         // TODO: Test the function `power_of_2` with some values.
-        assert_eq!();
-        assert_eq!();
-        assert_eq!();
-        assert_eq!();
+        assert_eq!(power_of_2(2), 4);
+        assert_eq!(power_of_2(4), 16);
+        assert_eq!(power_of_2(6), 64);
+        assert_eq!(power_of_2(10), 1024);
     }
 }
